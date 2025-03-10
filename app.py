@@ -1,2 +1,6 @@
-import streamlit as st
-'hey'
+import streamlit st
+'Hey'
+user = st.experimental_user
+user
+
+st.stop()
