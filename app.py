@@ -1,6 +1,9 @@
-'''[auth]
-redirect_uri = "http://localhost:8501/oauth2callback"
-cookie_secret = "xxx"
-client_id = "xxx"
-client_secret = "xxx"
-server_metadata_url = "https://accounts.google.com/.well-known/openid-configuration"  # fmt: skip'''
+import streamlit as st
+
+if not st.experimental_user.is_logged_in:
+    if st.button("Log in"):
+        st.login()
+else:
+    if st.button("Log out"):
+        st.logout()
+    st.write(f"Hello, {st.experimental_user.name}!")
