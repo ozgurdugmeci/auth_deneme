@@ -1,11 +1,10 @@
 import streamlit as st
 'Hop'
-user=st.experimental_user
-user   
 
-'''if not st.experimental_user.is_logged_in:
+
+if not st.experimental_user.is_logged_in:
     if st.button("Log in"):
-        st.login()
+        st.login("google")
 else:
     if st.button("Log out"):
         st.logout()
@@ -14,4 +13,4 @@ else:
 #user =st.experimental_user
 #user
 
-#st.stop()'''
+#st.stop()
