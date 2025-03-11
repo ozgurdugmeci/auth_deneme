@@ -9,7 +9,7 @@ else:
         st.logout()
     st.write(f"Hello, {st.experimental_user.name}!")
 
-user =st.experimental_user
-user
+#user =st.experimental_user
+#user
 
-st.stop()
+#st.stop()
