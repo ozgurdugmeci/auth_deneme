@@ -17,13 +17,24 @@ random_page = st.Page(
 
 # Enables switch_page behaviour
 if not st.experimental_user.is_logged_in:
+    if st.button("Log in"):
+        st.login("google")
+else:
+    if st.button("Log out"):
+        st.logout()
+    st.write(f"Hello, {st.experimental_user.name}!")'''
+
+
+
+
+if not st.experimental_user.is_logged_in:
     pg = st.navigation(
         [landing_page],
         position="hidden",
     )
-elif st.experimental_user.email == st.secrets["admin_email"]:
+elif st.experimental_user.email == 'ozgur.dugmeci@gmail.com':
     pg = st.navigation(
-        [app_page, admin_page],
+        [admin_page],
     )
 else:
     pg = st.navigation(
@@ -34,14 +45,6 @@ else:
 # Head to first page of navigation
 pg.run()
 
-
-'''if not st.experimental_user.is_logged_in:
-    if st.button("Log in"):
-        st.login("google")
-else:
-    if st.button("Log out"):
-        st.logout()
-    st.write(f"Hello, {st.experimental_user.name}!")'''
 
 #user =st.experimental_user
 #user
