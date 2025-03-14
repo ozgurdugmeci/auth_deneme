@@ -11,8 +11,8 @@ st.set_page_config(
 # Define app pages
 landing_page = st.Page("./pages/landing_page.py", title="Landing", icon=":material/home:")
 app_page = st.Page("./pages/operator.py", title="App", icon=":material/play_arrow:")
-random_page = st.Page(
-    "./pages/other_page.py", title="Admin", icon=":material/admin_panel_settings:"
+admin_page = st.Page(
+    "./pages/admin.py", title="Admin", icon=":material/admin_panel_settings:"
 )
 
 
