@@ -22,7 +22,7 @@ if not st.experimental_user.is_logged_in:
         [landing_page],
         position="hidden",
     )
-elif st.experimental_user.email == 'ozgurr.dugmeci@gmail.com':
+elif st.experimental_user.email == 'ozgur.dugmeci@gmail.com':
     pg = st.navigation(
         [admin_page],
     )
