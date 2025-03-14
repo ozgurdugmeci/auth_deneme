@@ -5,9 +5,9 @@ import streamlit as st
 st.set_page_config(
     page_title="page_title",
     page_icon="✨",
-    initial_sidebar_state="collapsed",
+    
 )
-
+#initial_sidebar_state="collapsed",
 # Define app pages
 landing_page = st.Page("./pages/landing_page.py", title="Landing", icon=":material/home:")
 app_page = st.Page("./pages/operator.py", title="App", icon=":material/play_arrow:")
