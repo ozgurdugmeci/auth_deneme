@@ -1,5 +1,5 @@
 import streamlit as st
 
-if st.button():
+if st.button('sign_in'):
  st.login("google")
     
